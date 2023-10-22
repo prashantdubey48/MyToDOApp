@@ -149,8 +149,9 @@ const MyToDo = () => {
         placeholderTextColor={'gray'}
         onChangeText={text => setTask(text)}
       />
-      <Text style={textThemeWrapper}>{strings.priority}</Text>
+     
       <View style={styles.column}>
+      <Text style={textThemeWrapper}>{strings.priority}</Text>
         {renderPriorityView('green')}
         {renderPriorityView('yellow')}
         {renderPriorityView('red')}
@@ -256,7 +257,7 @@ const styles = StyleSheet.create({
   column: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     padding: 20,
   },
 });
